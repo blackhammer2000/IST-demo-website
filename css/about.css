@@ -1,0 +1,209 @@
+*,
+*::before,
+*::after {
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  background-color: black;
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+
+.active {
+  color: crimson;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  min-height: 100%;
+  padding: 0.2em;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  background-color: white;
+  color: black;
+  height: auto;
+}
+
+header .logo {
+  display: grid;
+  place-items: center;
+  width: 25%;
+  height: 50%;
+}
+
+ul {
+  display: flex;
+}
+
+ul li {
+  margin: 0 2em;
+  list-style: none;
+}
+
+header li a {
+  color: black;
+  text-decoration: none;
+}
+
+header .header-html-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 30%;
+  height: auto;
+}
+
+header .header-html-links a {
+  font-weight: 700;
+  transition: color 0.3s ease-in-out;
+}
+
+header .header-html-links a:hover {
+  color: crimson;
+  box-shadow: 3px 5px 35px #e4405f;
+}
+
+header .header-page-links {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 35%;
+  height: auto;
+}
+
+header .header-page-links a {
+  background-color: crimson;
+  margin: 0 1em;
+  padding: 1em;
+  color: white;
+  border-radius: 10px;
+}
+
+header .header-page-links a:hover {
+  color: white;
+  background-color: rgba(220, 20, 60, 0.548);
+}
+
+span {
+  color: crimson;
+}
+
+.about-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+  padding: 2em 5em;
+  border-right: 2px solid crimson;
+  border-left: 2px solid crimson;
+  margin-top: 3em;
+  background-image: url("../images/internship-program.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  background-position: top;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.732);
+  background-blend-mode: color;
+}
+
+.about-section .about-header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+
+.about-section .about-body {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: right;
+  letter-spacing: 1px;
+  width: 75%;
+  height: auto;
+  line-height: 1.5em;
+}
+
+.about-body a {
+  text-decoration: none;
+  color: crimson;
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 90%;
+  height: auto;
+  margin-top: 2em;
+  border-top: 1px solid crimson;
+}
+
+footer .links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  margin: 0.9em 0;
+}
+
+footer li a {
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+footer .social-links,
+footer .page-links {
+  border-left: 1px solid crimson;
+  border-right: 1px solid crimson;
+  font-weight: 700;
+}
+
+.facebook:hover {
+  color: #3b5998;
+  transition: all 0.3s ease-in-out;
+  transform: scale(1.1);
+  box-shadow: 0px 5px 35px #3b5998;
+}
+.instagram:hover {
+  color: #e4405f;
+  transition: all 0.3s ease-in-out;
+  transform: scale(1.1);
+  box-shadow: 0px 5px 35px #e4405f;
+}
+.twitter:hover {
+  color: #00aced;
+  transition: all 0.3s ease-in-out;
+  transform: scale(1.1);
+  box-shadow: 0px 5px 35px #00aced;
+}
+
+footer .page-links a:hover {
+  color: crimson;
+  box-shadow: 0px 5px 35px crimson;
+}
+
+.copyrights {
+  font-weight: 700;
+  color: crimson;
+}

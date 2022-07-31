@@ -1,0 +1,239 @@
+*,
+*::before,
+*::after {
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  background-color: black;
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  min-height: 100%;
+  padding: 0.2em;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  background-color: white;
+  color: black;
+  height: auto;
+}
+
+header .logo {
+  display: grid;
+  place-items: center;
+  width: 25%;
+  height: 50%;
+}
+
+ul {
+  display: flex;
+}
+
+ul li {
+  margin: 0 2em;
+  list-style: none;
+}
+
+header li a {
+  color: black;
+  text-decoration: none;
+}
+
+header .header-html-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 30%;
+  height: auto;
+}
+
+header .header-html-links a {
+  font-weight: 700;
+  transition: color 0.3s ease-in-out;
+}
+
+header .header-html-links a:hover {
+  color: crimson;
+  box-shadow: 3px 5px 35px #e4405f;
+}
+
+header .header-page-links {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 35%;
+  height: auto;
+}
+
+header .header-page-links a {
+  background-color: crimson;
+  margin: 0 1em;
+  padding: 1em;
+  color: white;
+  border-radius: 10px;
+}
+
+header .header-page-links a:hover {
+  color: white;
+  background-color: rgba(220, 20, 60, 0.548);
+}
+
+span {
+  color: crimson;
+}
+
+.login-form {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: auto;
+  padding: 2em;
+  background-image: url("../images/internship-program.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.832);
+  background-blend-mode: color;
+}
+
+fieldset {
+  width: 50%;
+  height: auto;
+  border-top: 1px solid crimson;
+  padding: 2em 1em;
+}
+
+fieldset .input,
+.button {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: auto;
+}
+
+legend {
+  font-weight: 700;
+  font-size: 1.3em;
+  margin-left: 2em;
+}
+
+.input input {
+  width: 100%;
+  padding: 1.5em 2em;
+  margin: 1.5em 1em;
+  background-color: rgba(155, 47, 69, 0.76);
+  outline: none;
+  border: none;
+  color: white;
+  transition: border 0.3s ease-in-out;
+}
+
+.input input::placeholder {
+  color: white;
+}
+
+.input input:focus {
+  outline: none;
+  border-bottom: 1px solid white;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+}
+
+.button input {
+  width: 100%;
+  padding: 1.5em 2em;
+  color: white;
+  background-color: crimson;
+  margin-top: 2em;
+  cursor: pointer;
+}
+
+.button input:hover {
+  background-color: #e4405f;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 90%;
+  height: auto;
+  margin-top: 1em;
+  border-top: 1px solid crimson;
+}
+
+footer .links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  margin: 0.9em 0;
+}
+
+footer li a {
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+footer .social-links,
+footer .page-links {
+  border-left: 1px solid crimson;
+  border-right: 1px solid crimson;
+  font-weight: 700;
+}
+
+i {
+  font-size: 1.2em;
+}
+
+.facebook:hover {
+  color: #3b5998;
+  transition: all 0.3s ease-in-out;
+  transform: scale(1.1);
+  box-shadow: 3px 5px 35px #3b5998;
+}
+.instagram:hover {
+  color: #e4405f;
+  transition: all 0.3s ease-in-out;
+  transform: scale(1.1);
+  box-shadow: 3px 5px 35px #e4405f;
+}
+.twitter:hover {
+  color: #00aced;
+  transition: all 0.3s ease-in-out;
+  transform: scale(1.1);
+  box-shadow: 3px 5px 35px #00aced;
+}
+
+footer .page-links a:hover {
+  color: crimson;
+  box-shadow: 0px 5px 35px crimson;
+}
+
+.copyrights {
+  font-weight: 700;
+  color: crimson;
+}
